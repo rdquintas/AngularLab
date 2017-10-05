@@ -1,0 +1,11 @@
+# Folders #
+.metadata
+.node_modules
+.recommenders
+
+# Files #
+*.class
+*.log
+
+
+
