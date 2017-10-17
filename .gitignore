@@ -1,8 +1,6 @@
 # Folders #
-.metadata
-.DONT_TRANSPORT
-.node_modules
-.recommenders
+*DONT_TRANSPORT*
+*node_modules*
 
 # Files #
 *.class
