@@ -4,4 +4,4 @@
 
 ## Exercise- Favorite Component
 
-Create a toggle star component
+Create a toggle star component with CSS class binding
