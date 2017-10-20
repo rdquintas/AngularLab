@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  isSelected: boolean;
+  constructor() {
+    this.isSelected = true;
+  }
+
+  onClick() {
+
+    if (this.isSelected) {
+      this.isSelected = false;
+    } else {
+      this.isSelected = true;
+    }
+
+  }
 }
