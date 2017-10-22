@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title: string;
   val_input: string;
   val_output: string;
 
@@ -31,4 +32,7 @@ export class AppComponent {
   private capitalize(str: string) {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
   }
+
+
+ 
 }

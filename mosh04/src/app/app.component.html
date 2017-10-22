@@ -1,2 +1,8 @@
+<h1> Example with two-way DATA binding</h1>
 <input [(ngModel)]="val_input" (keyup)=" onKeyup() " />
-<h1>{{val_output}}</h1>
+<h2>{{val_output}}</h2>
+<br>
+<hr>
+<h1> Example with PIPE</h1>
+<input [(ngModel)]="title" />
+<h2>{{title | camelcase }}</h2>
