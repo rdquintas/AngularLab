@@ -2,6 +2,7 @@
 
 # Angular Fundamentals
 
-## Exercise- Favorite Component
+## Exercise - Favorite Component
 
-Create a toggle star component with CSS class binding
+- Create a toggle star component with CSS class binding
+- Uses Bootstrap
