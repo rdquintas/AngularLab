@@ -4,7 +4,6 @@
 
 ## Exercise - Like component
 
-- Create an input field with TWO-WAY binding
-- Create a custom PIPE
+- Create a standalone component with @Input fields
 - Uses Bootstrap
 - Uses font-awesome
