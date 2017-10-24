@@ -4,6 +4,6 @@
 
 ## Exercise - Like component
 
-- Create a standalone component with @Input fields
+- Create a standalone component with `@Input` fields
 - Uses Bootstrap
 - Uses font-awesome
