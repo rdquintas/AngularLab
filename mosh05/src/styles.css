@@ -1,0 +1,23 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~font-awesome/css/font-awesome.min.css';
+body {
+    padding: 5rem;
+}
+
+i.fa {
+    font-size: 3rem;
+    color: #ccc;
+}
+
+i.active {
+    color: deeppink;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+p {
+    font-size: 3rem;
+    display: inline;
+}

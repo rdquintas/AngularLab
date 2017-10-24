@@ -1,0 +1,19 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~font-awesome/css/font-awesome.min.css';
+i.fa {
+    font-size: 3rem;
+    color: #ccc;
+}
+
+i.highlited {
+    color: deeppink;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+p {
+    font-size: 3rem;
+    display: inline;
+}

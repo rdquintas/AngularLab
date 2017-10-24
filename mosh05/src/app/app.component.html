@@ -1,0 +1,8 @@
+<h1>Example with ZRQ solution</h1>
+<i class="fa fa-heart" (click)="onClick()" [class.active]="tweet.isLiked"></i>
+<p>{{tweet.likesCount}}</p>
+
+<hr>
+<h1>Example with MOSH solution</h1>
+<h3>Using INPUT/OUTPUT encapulated component</h3>
+<app-like [likesCount]="tweet2.likesCount" [isActive]="tweet2.isLiked"></app-like>
