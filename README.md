@@ -23,7 +23,6 @@ Project | Information
 ## Building Re-usable components
 Project | Information
 --- | ---
-
 [mosh05](https://github.com/rdquintas/AngularLab/tree/master/mosh05) | Create a standalone component with `@Input` fields; Uses Bootstrap; Uses font-awesome
 
 
