@@ -2,7 +2,7 @@
 
 # Directives
 
-## Exercise - Zippy component component
+## Exercise - Zippy component
 
 - Create a standalone component with `@Input` fields
 - Uses Bootstrap v.4.0.0
