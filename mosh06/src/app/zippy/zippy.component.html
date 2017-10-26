@@ -1,3 +1,25 @@
-<p>
-  zippy works!
-</p>
+<div id="accordion" role="tablist">
+    <div class="card">
+        <div class="card-header" role="tab" id="headingOne">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="navbar-brand very-bold">{{ title }}</div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    </ul>
+                    <i (click)="onToggle()" class="fa" [class.fa-minus-circle]="isOpen" [class.fa-plus-circle]="!isOpen" aria-hidden="true"></i>
+                </div>
+            </nav>
+            <!-- <h5 class="mb-0">
+                {{ title }}
+                
+            </h5> -->
+        </div>
+
+        <div id="collapseOne" class="collapse" [class.show]="isOpen" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                {{ body }}.
+            </div>
+        </div>
+    </div>
+
+</div>

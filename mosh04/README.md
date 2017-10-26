@@ -1,6 +1,6 @@
 # Coding with Mosh
 
-# Angular Fundamentals
+# Displaying data and handling events
 
 ## Exercise - Title Case
 

@@ -5,5 +5,5 @@
 ## Exercise - Zippy component component
 
 - Create a standalone component with `@Input` fields
-- Uses Bootstrap
+- Uses Bootstrap v.4.0.0
 - Uses font-awesome

@@ -1,6 +1,6 @@
 # Coding with Mosh
 
-# Angular Fundamentals
+# Building Re-usable components
 
 ## Exercise - Like component
 
