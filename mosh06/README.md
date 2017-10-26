@@ -1,6 +1,6 @@
 # Coding with Mosh
 
-# Angular Fundamentals
+# Directives
 
 ## Exercise - Zippy component component
 
