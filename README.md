@@ -1,12 +1,14 @@
 # AngularLab
 Stuff I did with Angular
 
-##TypeScript stuff
+##TypeScript stuff~
+
 Project | Information
 --- | ---
 [mosh01](https://github.com/rdquintas/AngularLab/tree/master/mosh01) | TypeScript and Object-oriented Programming Fundamentals
 
 ##Angular Fundamentals
+
 Project | Information
 --- | ---
 [mosh02](https://github.com/rdquintas/AngularLab/tree/master/mosh02) | Create an authors component and service with array
