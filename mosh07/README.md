@@ -2,7 +2,7 @@
 
 # Forms
 
-## Exercise - Create Course FORM
+## Exercise - Create Course TEMPLATE driven form
 
 - Create a standalone template driven FORM component with `@Input` fields
 - Uses Bootstrap v.4.0.0
