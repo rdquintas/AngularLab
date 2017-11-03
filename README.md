@@ -30,3 +30,8 @@ Project | Information
 Project | Information
 --- | ---
 [mosh06](https://github.com/rdquintas/AngularLab/tree/master/mosh06) | Create a standalone component with `@Input` fields; Uses Bootstrap v4.0.0; Uses font-awesome
+
+## Forms
+Project | Information
+--- | ---
+[mosh07](https://github.com/rdquintas/AngularLab/tree/master/mosh07) | Create a standalone template driven FORM component with `@Input` fields; Uses Bootstrap v.4.0.0; Form validation for required fields, etc...; error messages; JSON pipe to debug field values
