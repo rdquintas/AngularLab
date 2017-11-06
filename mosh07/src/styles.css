@@ -11,3 +11,7 @@ p {
     font-size: 3rem;
     display: inline;
 }
+
+input.ng-invalid {
+    border: 3px solid red;
+}
