@@ -1,18 +1,21 @@
-<form>
+<form #f="ngForm">
     <div class="form-group">
         <label for="courseName">Course Name</label>
-        <!-- <input type="text" required class="form-control" ngModel name="name" id="courseName" placeholder="Course Name"> -->
         <input required minlength="3" ngModel type="text" class="form-control" name="name" #name="ngModel" id="courseName" placeholder="Course Name" />
-        <div class="alert alert-danger" *ngIf="!name.valid">
+        <div class="alert alert-danger" *ngIf="!name.valid && name.touched">
             <div *ngIf="name.errors.required">Name is required</div>
-            <div *ngIf="name.errors.minlength">Name minlength</div>
+            <div *ngIf="name.errors.minlength">Name should be at {{ name.errors.minlength.requiredLength }} list length</div>
         </div>
     </div>
+
     <div class="form-group">
         <label for="category">Category</label>
-        <select class="form-control" id="category">
-          <option *ngFor="let cat of categories" [value]="cat.id">{{cat.name}}</option>
+        <select required ngModel name="category" #category="ngModel" class="form-control" id="category">
+            <option *ngFor="let cat of categories" [value]="cat.id">{{ cat }}</option>
         </select>
+        <div class="alert alert-danger" *ngIf="!category.valid && category.touched">
+            <div *ngIf="category.errors.required">Category is required</div>
+        </div>
     </div>
     <div class="form-check">
         <label class="form-check-label">
@@ -20,6 +23,6 @@
       30-day money-back guarantee
     </label>
     </div>
-    <div>TODO: {{ name.valid|json }}</div>
+    <div>{{ f.value | json }}</div>
     <button class="btn btn-primary">Create</button>
 </form>
