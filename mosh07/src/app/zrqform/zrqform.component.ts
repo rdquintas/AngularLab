@@ -7,13 +7,21 @@ import { Component, Input } from '@angular/core';
 })
 export class ZrqformComponent {
   @Input() name: string;
-  @Input() categories: string[];
+  @Input() categories: any[];
   @Input() hasGuarantee: boolean;
 
   constructor() {
     this.name = 'nome do curso';
-    this.categories = ['', 'Developement', 'Art', 'Languages'];
+    this.categories = [
+      { id: 1, name: 'Development' },
+      { id: 2, name: 'Art' },
+      { id: 3, name: 'Languages' },
+    ];
     this.hasGuarantee = true;
   }
 
+
+  submit(course) {
+    console.log('Course: ', course);
+  }
 }
