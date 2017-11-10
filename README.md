@@ -35,3 +35,5 @@ Project | Information
 Project | Information
 --- | ---
 [mosh07](https://github.com/rdquintas/AngularLab/tree/master/mosh07) | Create a standalone TEMPLATE DRIVEN form component with `@Input` fields; Uses Bootstrap v.4.0.0; Form validation for required fields, etc...; error messages; drop-down fields, check-box fields, JSON pipe to debug field values
+[forms01](https://github.com/rdquintas/AngularLab/tree/master/forms01) | This app has 2 REACTIVE forms examples: signup-form and array-form. async validations, custom validator, dynamic reacive form
+
