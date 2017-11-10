@@ -13,5 +13,5 @@
 - custom validator
 
 ### array-form
-- dynamic reacive form
+- dynamic reactive form
 - the FormControlls are added dynamically to the Form as we type + enter
