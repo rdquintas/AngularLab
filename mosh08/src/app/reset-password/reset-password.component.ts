@@ -1,7 +1,6 @@
+import { CustomValidators } from './custom.validators';
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-// import { UserNameValidators } from './username.validators';
-
 @Component({
   selector: 'app-reset-password',
   templateUrl: './reset-password.component.html',
@@ -9,17 +8,12 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class ResetPasswordComponent {
 
-  // customValidators = new UserNameValidators();
+  customValidators = new CustomValidators();
 
   form = new FormGroup({
-    // username: new FormControl('', [
-    //   Validators.required,
-    //   Validators.minLength(3),
-    //   this.customValidators.cannotContainSpace
-    // ], this.customValidators.shouldBeUnique),
-    oldPassword: new FormControl('', Validators.required),
+    oldPassword: new FormControl('', Validators.required, this.customValidators.isPasswordValid),
     newPassword: new FormControl('', Validators.required),
     confPassword: new FormControl('', Validators.required),
-  });
+  }, this.customValidators.isPasswordMatchOK);
 }
 
