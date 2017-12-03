@@ -38,3 +38,7 @@ Project | Information
 [mosh08](https://github.com/rdquintas/AngularLab/tree/master/mosh08) | Create a standalone REACTIVE form component; Uses Bootstrap; Form validation for required fields, etc...; error messages; with custom validator and async validator, simulates reset password mechanism
 [forms01](https://github.com/rdquintas/AngularLab/tree/master/forms01) | This app has 2 REACTIVE forms examples: signup-form and array-form. async validations, custom validator, dynamic reactive form
 
+## HTTP
+Project | Information
+--- | ---
+[forms02](https://github.com/rdquintas/AngularLab/tree/master/forms02) | HTTP CRUD example, Reactive form with HTTP api, CRUD example, Uses Bootstrap, Error Handling class implementation, Service data implementation
