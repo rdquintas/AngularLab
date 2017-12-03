@@ -31,7 +31,7 @@ export class PostsComponent implements OnInit {
       .subscribe(
       newPost => {
         post['id'] = newPost.id;
-        console.log(newPost.json());
+        console.log(newPost);
       },
       (error: AppError) => {
         this.posts.splice(0, 1);
