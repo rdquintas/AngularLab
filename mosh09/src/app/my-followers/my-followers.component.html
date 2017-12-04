@@ -1,3 +1,11 @@
-<p>
-  my-followers works!
-</p>
+<ul class="list-group">
+    <li *ngFor="let follower of followers" class="list-group-item">
+        <a href="{{followers.html_url}}">
+            <img src="{{follower.avatar_url}}" class="img-circle">
+        </a>
+        <a href="{{followers.html_url}}">
+            <h2>{{follower.html_url}}</h2>
+        </a>
+        <h2>{{follower.login}}</h2>
+    </li>
+</ul>
