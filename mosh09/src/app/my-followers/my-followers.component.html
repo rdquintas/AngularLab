@@ -1,11 +1,11 @@
-<ul class="list-group">
-    <li *ngFor="let follower of followers" class="list-group-item">
-        <a href="{{followers.html_url}}">
-            <img src="{{follower.avatar_url}}" class="img-circle">
+<div *ngFor="let follower of followers" class="media">
+    <div class="media-left">
+        <a href="{{follower.html_url}}">
+            <img class="media-object img-circle" src="{{follower.avatar_url}}" alt="">
         </a>
-        <a href="{{followers.html_url}}">
-            <h2>{{follower.html_url}}</h2>
-        </a>
-        <h2>{{follower.login}}</h2>
-    </li>
-</ul>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">{{follower.login}}</h4>
+        <a href="{{follower.html_url}}">{{follower.html_url}}</a>
+    </div>
+</div>
