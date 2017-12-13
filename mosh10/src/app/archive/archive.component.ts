@@ -21,6 +21,6 @@ export class ArchiveComponent implements OnInit {
   }
 
   viewAll() {
-    this.router.navigate(['']);
+    this.router.navigate(['/']);
   }
 }

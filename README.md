@@ -43,3 +43,8 @@ Project | Information
 --- | ---
 [forms02](https://github.com/rdquintas/AngularLab/tree/master/forms02) | HTTP CRUD example, Reactive form with HTTP api, CRUD example, Uses Bootstrap, Error Handling class implementation, Service data implementation
 [mosh09](https://github.com/rdquintas/AngularLab/tree/master/mosh09) | Calling GITHUB API, Reactive form with HTTP api, Lists followers from GITHUB api, Uses Bootstrap, Error Handling class implementation, Service data implementation
+
+## ROUTES
+Project | Information
+--- | ---
+[mosh10](https://github.com/rdquintas/AngularLab/tree/master/mosh10) | Router app with 2 pages, Uses RouterModule, Reads URL params, navigates using routerLink directive, with different routes, with 'not found' route component
