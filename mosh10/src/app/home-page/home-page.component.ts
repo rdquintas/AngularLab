@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
+  posts: any[];
   constructor() { }
 
   ngOnInit() {
+    this.posts = [
+      {
+        year: 2017,
+        month: 1
+      },
+      {
+        year: 2017,
+        month: 2
+      }, {
+        year: 2017,
+        month: 3
+      }
+    ];
   }
-
 }
