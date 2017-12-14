@@ -1,8 +1,8 @@
 # Coding with Mosh
 
-# LOGIN FORM
+# LOGIN FORM with USR/PWD
 
-## Exercise - LOGIN FORM
+## Exercise - LOGIN FORM with USR/PWD
 
 - Uses RouterModule
 - Mockup server for auth
