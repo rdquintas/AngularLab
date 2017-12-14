@@ -1,11 +1,11 @@
 # Coding with Mosh
 
-# ROUTER
+# LOGIN FORM
 
-## Exercise - Router app with 2 pages
+## Exercise - LOGIN FORM
 
 - Uses RouterModule
-- Reads URL params
-- navigates using routerLink directive
-- with different routes
-- with 'not found' route component
+- Mockup server for auth
+- JSON Web Tokens (JWT)
+- uses angular2-jwt library
+- with 'not authorized' route component
