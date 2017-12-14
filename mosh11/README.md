@@ -9,3 +9,4 @@
 - JSON Web Tokens (JWT)
 - uses angular2-jwt library
 - with 'not authorized' route component
+- with AuthGuard service to control access to routes
