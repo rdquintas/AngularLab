@@ -7,16 +7,16 @@ export function fakeBackendFactory(
 
   // Este token tem o ADMIN = TRUE
   // tslint:disable-next-line:max-line-length
-  const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZHF1aW50YXMiLCJuYW1lIjoiUmljYXJkbyBRdWludGFzIiwiYWRtaW4iOnRydWV9.ZnymeDX9y5XwwFuWihDjNQXshd3Rc2zdatNw5O9gFoI';
+  // const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZHF1aW50YXMiLCJuYW1lIjoiUmljYXJkbyBRdWludGFzIiwiYWRtaW4iOnRydWV9.ZnymeDX9y5XwwFuWihDjNQXshd3Rc2zdatNw5O9gFoI';
 
   // Este token tem o ADMIN = FALSE
   // tslint:disable-next-line:max-line-length
-  // const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZHF1aW50YXMiLCJuYW1lIjoiUmljYXJkbyBRdWludGFzIiwiYWRtaW4iOmZhbHNlfQ.5TItOCIArqp2-VQ343DdVZP8PChwmUH_2Z-UoSZLSKY';
+  const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZHF1aW50YXMiLCJuYW1lIjoiUmljYXJkbyBRdWludGFzIiwiYWRtaW4iOmZhbHNlfQ.5TItOCIArqp2-VQ343DdVZP8PChwmUH_2Z-UoSZLSKY';
 
 
   backend.connections.subscribe((connection: MockConnection) => {
-    // We are using the setTimeout() function to simulate an 
-    // asynchronous call to the server that takes 1 second. 
+    // We are using the setTimeout() function to simulate an
+    // asynchronous call to the server that takes 1 second.
     setTimeout(() => {
       //
       // Fake implementation of /api/authenticate
