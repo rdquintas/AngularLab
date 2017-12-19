@@ -49,3 +49,8 @@ Project | Information
 Project | Information
 --- | ---
 [mosh10](https://github.com/rdquintas/AngularLab/tree/master/mosh10) | Router app with 2 pages, Uses RouterModule, Reads URL params, navigates using routerLink directive, with different routes, with 'not found' route component
+
+## FIREBASE
+Project | Information
+--- | ---
+[firebase-demo](https://github.com/rdquintas/AngularLab/tree/master/firebase-demomosh10) | Read data from Firebase; Example with and without async pipe
