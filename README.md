@@ -53,4 +53,4 @@ Project | Information
 ## FIREBASE
 Project | Information
 --- | ---
-[firebase-demo](https://github.com/rdquintas/AngularLab/tree/master/firebase-demomosh10) | Read data from Firebase; Example with and without async pipe
+[firebase-demo](https://github.com/rdquintas/AngularLab/tree/master/firebase-demomosh10) | Read data from Firebase; Example with and without `async pipe`

@@ -3,4 +3,4 @@
 # FIREBASE DEMO
 
 - Read data from Firebase
-- Example with and without async pipe
+- Example with and without `async pipe`
