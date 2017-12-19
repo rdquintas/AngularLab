@@ -1,0 +1,28 @@
+<h1>Firebase Database Test</h1>
+<button (click)="ngOnDestroy()" class="btn btn-primary">Go Offline</button>
+<h3>This is the normal example</h3>
+<ul>
+    <li *ngFor="let course of courses">
+        <ng-container *ngIf="course.title; else elseTemplate">
+            {{ course.title }}
+        </ng-container>
+        <ng-template #elseTemplate>
+            {{ course }}
+        </ng-template>
+    </li>
+</ul>
+<hr>
+<h3>This is an example with Async Pipe</h3>
+<ul>
+    <li *ngFor="let course of courses$ | async">
+        <ng-container *ngIf="course.title; else elseTemplate">
+            {{ course.title }}
+        </ng-container>
+        <ng-template #elseTemplate>
+            {{ course }}
+        </ng-template>
+    </li>
+</ul>
+<hr>
+<h3>This is an example with Async Pipe for single object</h3>
+<p>{{ author$ | async | json }}</p>
