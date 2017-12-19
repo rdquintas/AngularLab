@@ -3,15 +3,16 @@
 <input type="text" class="form-control" (keyup.enter)="add(course)" #course>
 <h3>This is the normal example</h3>
 <ul>
-    <li *ngFor="let course of courses">
-        {{ course.title || course }}
+    <li *ngFor="let course_a of courses">
+        {{ course_a.title || course_a }}
     </li>
 </ul>
 <hr>
 <h3>This is an example with Async Pipe</h3>
 <ul>
-    <li *ngFor="let course of courses$ | async">
-        {{ course.title || course }}
+    <li *ngFor="let course_b of courses$ | async">
+        {{ course_b.title || course_b }}
+        <button (click)="update(course_b.key)" class="btn btn-sm">Update</button>
     </li>
 </ul>
 <hr>

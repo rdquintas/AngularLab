@@ -9,15 +9,15 @@ import { Subscription } from 'rxjs/Subscription';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnDestroy {
-  private courses$; // adding a "$" to the variable is a naming convention to indicate this is an Observable
-  private author$;  // adding a "$" to the variable is a naming convention to indicate this is an Observable
-  private coursesList: AngularFireList<{}>;
+  private courses$: Observable<any[]>; // adding a "$" to the variable is a naming convention to indicate this is an Observable
+  private author$: Observable<any[]>;  // adding a "$" to the variable is a naming convention to indicate this is an Observable
+  private coursesList: AngularFireList<any>;
   private courses: any[];
   private subscription: Subscription;
 
-  constructor(db: AngularFireDatabase) {
+  constructor(private db: AngularFireDatabase) {
     this.courses$ = db.list('/courses').valueChanges();
-    this.coursesList = db.list('/courses');
+
     this.author$ = db.object('/authors/1').valueChanges();
     this.subscription = db.list('/courses').valueChanges().subscribe(courses => {
       this.courses = courses;
@@ -37,6 +37,13 @@ export class AppComponent implements OnDestroy {
   add(course: HTMLInputElement) {
     console.log('course: ', course.value);
     this.coursesList.push(course.value);
+    // this.db.list('/courses').push(course);
+  }
+
+  update(course) {
+    console.log('update course: ', course);
+    // this.db.object('/courses/' + course.key).update({ $value: course.$value });
+    // this.db.object('/courses/' + course.$key).set(course.$value + 'UPDATED');
     // this.db.list('/courses').push(course);
   }
 }
