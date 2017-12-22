@@ -54,3 +54,9 @@ Project | Information
 Project | Information
 --- | ---
 [firebase-demo](https://github.com/rdquintas/AngularLab/tree/master/firebase-demo) | Read data from Firebase; Example with and without `async pipe`; CRUD methods
+
+
+## ANIMATIONS
+Project | Information
+--- | ---
+[animations-demo](https://github.com/rdquintas/AngularLab/tree/master/animations-demo) | xxxx
