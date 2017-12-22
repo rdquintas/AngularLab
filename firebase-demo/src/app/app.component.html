@@ -3,16 +3,18 @@
 <input type="text" class="form-control" (keyup.enter)="add(course)" #course>
 <h3>This is the normal example</h3>
 <ul>
-    <li *ngFor="let course_a of courses">
-        {{ course_a.title || course_a }}
+    <li *ngFor="let course of arr_courses">
+        {{ course.value || course }}
     </li>
 </ul>
 <hr>
 <h3>This is an example with Async Pipe</h3>
 <ul>
-    <li *ngFor="let course_b of courses$ | async">
-        {{ course_b.title || course_b }}
-        <button (click)="update(course_b.key)" class="btn btn-sm">Update</button>
+    <li *ngFor="let course of (courses$ | async)">
+        {{course | json}}
+        <!-- {{ course.value || course }} -->
+        <button (click)="update(course)" class="btn btn-sm">Update</button>
+        <button (click)="delete(course.key)" class="btn btn-sm">Delete</button>
     </li>
 </ul>
 <hr>

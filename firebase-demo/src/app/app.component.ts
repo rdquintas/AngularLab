@@ -2,6 +2,7 @@ import { Observable } from 'rxjs/Observable';
 import { Component, OnDestroy } from '@angular/core';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { Subscription } from 'rxjs/Subscription';
+import { AngularFireObject } from 'angularfire2/database/interfaces';
 
 @Component({
   selector: 'app-root',
@@ -11,17 +12,22 @@ import { Subscription } from 'rxjs/Subscription';
 export class AppComponent implements OnDestroy {
   private courses$: Observable<any[]>; // adding a "$" to the variable is a naming convention to indicate this is an Observable
   private author$: Observable<any[]>;  // adding a "$" to the variable is a naming convention to indicate this is an Observable
-  private coursesList: AngularFireList<any>;
-  private courses: any[];
+
+  private arr_courses: any[];
   private subscription: Subscription;
 
   constructor(private db: AngularFireDatabase) {
-    this.courses$ = db.list('/courses').valueChanges();
+    // this.courses$ = this.db.list('/courses').valueChanges();
 
-    this.author$ = db.object('/authors/1').valueChanges();
-    this.subscription = db.list('/courses').valueChanges().subscribe(courses => {
-      this.courses = courses;
-      console.log(this.courses);
+
+    this.courses$ = this.db.list('/courses').snapshotChanges().map(changes => {
+      return changes.map(c => ({ key: c.payload.key, value: c.payload.val() }));
+    });
+
+    this.author$ = this.db.object('/authors/1').valueChanges();
+
+    this.subscription = this.db.list('/courses').valueChanges().subscribe(courses => {
+      this.arr_courses = courses;
     });
   }
 
@@ -36,14 +42,17 @@ export class AppComponent implements OnDestroy {
 
   add(course: HTMLInputElement) {
     console.log('course: ', course.value);
-    this.coursesList.push(course.value);
-    // this.db.list('/courses').push(course);
+    this.db.list('/courses').push(course.value);
+    course.value = '';
   }
 
   update(course) {
-    console.log('update course: ', course);
-    // this.db.object('/courses/' + course.key).update({ $value: course.$value });
-    // this.db.object('/courses/' + course.$key).set(course.$value + 'UPDATED');
-    // this.db.list('/courses').push(course);
+    const nowsTheTime: Date = new Date();
+    const str = nowsTheTime.toDateString() + ' | ' + nowsTheTime.toLocaleTimeString();
+    this.db.object('/courses/').update({ [course.key]: 'Updated: ' + str });
+  }
+
+  delete(key) {
+    this.db.object('/courses/' + key).remove();
   }
 }
