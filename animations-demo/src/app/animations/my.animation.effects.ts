@@ -11,7 +11,7 @@ export let myFadeOut = transition('* => void', [
 
 export let mySlideRight = transition('void => *', [
     style({ transform: 'translateX(-20px)', opacity: 0}),
-    animate(500, style({ transform: 'translateX(0px)', opacity: 1}))
+    animate('500ms ease-in', style({ transform: 'translateX(0px)', opacity: 1}))
 ]);
 
 export let mySlideLeft = transition('* => void', [
