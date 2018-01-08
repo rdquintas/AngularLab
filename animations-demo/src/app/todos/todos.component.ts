@@ -7,10 +7,16 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
   styleUrls: ['./todos.component.css'],
   animations: [
     trigger('fade', [
-      // state(),
+
+      // This is the FADE IN
       transition('void => *', [
         style({ backgroundColor: 'yellow', opacity: 0 }),
         animate(2000, style({ backgroundColor: 'white', opacity: 1 }))
+      ]),
+
+      // This is the FADE OUT
+      transition('* => void', [
+        animate(500, style({ opacity: 0 }))
       ])
     ])
   ]
