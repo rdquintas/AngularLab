@@ -15,5 +15,5 @@ export let mySlideRight = transition('void => *', [
 ]);
 
 export let mySlideLeft = transition('* => void', [
-    animate(300, style({ transform: 'translateX(-100px)', opacity: 0 }))
+    animate(300, style({ transform: 'translateX(-100%)', opacity: 0 }))
 ]);
