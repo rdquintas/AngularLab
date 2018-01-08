@@ -1,3 +1,4 @@
+import { myFadeIn, myFadeOut, mySlideRight, mySlideLeft } from './../animations/my.animation.effects';
 import { Component } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 
@@ -7,17 +8,10 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
   styleUrls: ['./todos.component.css'],
   animations: [
     trigger('fade', [
-
-      // This is the FADE IN
-      transition('void => *', [
-        style({ backgroundColor: 'yellow', opacity: 0 }),
-        animate(2000, style({ backgroundColor: 'white', opacity: 1 }))
-      ]),
-
-      // This is the FADE OUT
-      transition('* => void', [
-        animate(500, style({ opacity: 0 }))
-      ])
+      mySlideRight,
+      mySlideLeft
+      // myFadeIn, // This is the FADE IN
+      // myFadeOut // This is the FADE OUT
     ])
   ]
 })
