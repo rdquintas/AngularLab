@@ -8,10 +8,10 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
   styleUrls: ['./todos.component.css'],
   animations: [
     trigger('fade', [
-      mySlideRight,
-      mySlideLeft
-      // myFadeIn, // This is the FADE IN
-      // myFadeOut // This is the FADE OUT
+      mySlideRight, // This is the SLIDE IN
+      mySlideLeft   // This is the SLIDE OUT
+      // myFadeIn,  // This is the FADE IN
+      // myFadeOut  // This is the FADE OUT
     ])
   ]
 })
