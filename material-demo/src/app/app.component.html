@@ -11,7 +11,7 @@
 
 <h2>Drop Down Selects</h2>
 <mat-form-field>
-    <mat-select placeholder="Favorite food">
+    <mat-select placeholder="Favorite food" [(value)]="selectedFood">
         <mat-option *ngFor="let food of foods" [value]="food.value">
             {{ food.viewValue }}
         </mat-option>

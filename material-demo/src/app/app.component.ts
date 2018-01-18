@@ -15,6 +15,8 @@ export class AppComponent {
     { value: 'tacos-2', viewValue: 'Tacos' }
   ];
 
+  selectedFood = 'pizza-1';
+
   onChange(event) {
     console.log(event);
   }
