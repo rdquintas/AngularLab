@@ -60,3 +60,8 @@ Project | Information
 Project | Information
 --- | ---
 [animations-demo](https://github.com/rdquintas/AngularLab/tree/master/animations-demo) | uses Angular Animation; transitions; custom states; polyfills
+
+## ANGULAR MATERIAL
+Project | Information
+--- | ---
+[material-demo](https://github.com/rdquintas/AngularLab/tree/master/material-demo) | uses Angular Material;
