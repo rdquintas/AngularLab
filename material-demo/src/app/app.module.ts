@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
-import { MatCheckboxModule, MatRadioModule } from '@angular/material';
+import { MatCheckboxModule, MatRadioModule, MatSelectModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { MatCheckboxModule, MatRadioModule } from '@angular/material';
     BrowserModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,6 +9,11 @@ export class AppComponent {
   title = 'app';
   isChecked = false;
   isRadioButtonChecked = true;
+  foods = [
+    { value: 'steak-0', viewValue: 'Steak' },
+    { value: 'pizza-1', viewValue: 'Pizza' },
+    { value: 'tacos-2', viewValue: 'Tacos' }
+  ];
 
   onChange(event) {
     console.log(event);
