@@ -17,3 +17,18 @@
         </mat-option>
     </mat-select>
 </mat-form-field>
+
+<h2>Input Fields</h2>
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <input ngModel name="favfood" matInput placeholder="Favorite food" required value="Sushi">
+        <mat-hint>Type the stuff...</mat-hint>
+        <span matPrefix>Dr</span>
+        <span matSuffix>@ricardoquintas.com</span>
+        <mat-error>This field is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Leave a comment"></textarea>
+    </mat-form-field>
+</form>
