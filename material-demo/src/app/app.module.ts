@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
-import { MatCheckboxModule, MatRadioModule, MatSelectModule, MatInputModule } from '@angular/material';
+import { MatCheckboxModule, MatRadioModule, MatSelectModule, MatInputModule, MatDatepickerModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { MatCheckboxModule, MatRadioModule, MatSelectModule, MatInputModule } fr
     MatCheckboxModule,
     MatRadioModule,
     MatSelectModule,
-    MatInputModule
+    MatInputModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
