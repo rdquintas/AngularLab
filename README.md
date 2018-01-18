@@ -64,4 +64,4 @@ Project | Information
 ## ANGULAR MATERIAL
 Project | Information
 --- | ---
-[material-demo](https://github.com/rdquintas/AngularLab/tree/master/material-demo) | uses Angular Material;
+[material-demo](https://github.com/rdquintas/AngularLab/tree/master/material-demo) | uses Angular Material
