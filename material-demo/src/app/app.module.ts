@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 import {
   MatCheckboxModule, MatRadioModule, MatSelectModule, MatInputModule, MatDatepickerModule,
-  MatNativeDateModule, MatIconModule
+  MatNativeDateModule, MatIconModule, MatButtonModule
 } from '@angular/material';
 
 @NgModule({
@@ -24,7 +24,8 @@ import {
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
