@@ -14,8 +14,9 @@ export class AppComponent {
     { value: 'pizza-1', viewValue: 'Pizza' },
     { value: 'tacos-2', viewValue: 'Tacos' }
   ];
-
   selectedFood = 'pizza-1';
+  minDate = new Date(2018, 1, 1);
+  maxDate = new Date(2018, 1, 10);
 
   onChange(event) {
     console.log(event);
