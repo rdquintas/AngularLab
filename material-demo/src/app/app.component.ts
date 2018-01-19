@@ -18,6 +18,18 @@ export class AppComponent {
   minDate = new Date(2018, 1, 1);
   maxDate = new Date(2018, 1, 10);
   categories = [{ name: 'Beginner' }, { name: 'Intermediate' }, { name: 'Advanced' }];
+  progress = 0;
+  timer;
+
+  constructor() {
+    this.timer = setInterval(() => {
+      this.progress++;
+      console.log('zrq');
+      if (this.progress === 100) {
+        clearInterval(this.timer);
+      }
+    }, 20);
+  }
 
   onChange(event) {
     console.log(event);
