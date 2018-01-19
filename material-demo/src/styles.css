@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 body {
     margin: 5rem;
@@ -7,6 +8,11 @@ body {
 
 h2 {
     margin-top: 3rem;
+}
+
+.mat-icon {
+    font-size: 2rem;
+    padding: 0.5rem;
 }
 
 .example-form {
