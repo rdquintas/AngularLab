@@ -17,8 +17,16 @@ export class AppComponent {
   selectedFood = 'pizza-1';
   minDate = new Date(2018, 1, 1);
   maxDate = new Date(2018, 1, 10);
+  categories = [{ name: 'Beginner' }, { name: 'Intermediate' }, { name: 'Advanced' }];
 
   onChange(event) {
     console.log(event);
   }
+
+  onSelectChip(cat) {
+    this.categories.filter(c => c !== cat).forEach(c => c['selected'] = false);
+
+    cat.selected = !cat.selected;
+  }
+
 }
