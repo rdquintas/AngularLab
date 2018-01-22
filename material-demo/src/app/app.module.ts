@@ -9,7 +9,7 @@ import {
   MatCheckboxModule
   , MatRadioModule, MatSelectModule, MatInputModule, MatDatepickerModule,
   MatNativeDateModule, MatIconModule, MatButtonModule, MatChipsModule, MatProgressSpinnerModule,
-  MatTooltipModule
+  MatTooltipModule, MatTabsModule
 } from '@angular/material';
 
 @NgModule({
@@ -30,7 +30,8 @@ import {
     MatButtonModule,
     MatChipsModule,
     MatProgressSpinnerModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
