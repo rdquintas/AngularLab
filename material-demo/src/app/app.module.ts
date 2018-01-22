@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
 import {
-  MatCheckboxModule, MatRadioModule, MatSelectModule, MatInputModule, MatDatepickerModule,
+  MatCheckboxModule
+  , MatRadioModule, MatSelectModule, MatInputModule, MatDatepickerModule,
   MatNativeDateModule, MatIconModule, MatButtonModule, MatChipsModule
 } from '@angular/material';
 

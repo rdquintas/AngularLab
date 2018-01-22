@@ -35,9 +35,9 @@ export class AppComponent {
     console.log(event);
   }
 
-  // onSelectChip(cat) {
-  //   this.categories.filter(c => c !== cat).forEach(c => c['selected'] = false);
-  //   cat.selected = !cat.selected;
-  // }
+  onSelectChip(cat) {
+    this.categories.filter(c => c !== cat).forEach(c => c['selected'] = false);
+    cat.selected = !cat.selected;
+  }
 
 }
