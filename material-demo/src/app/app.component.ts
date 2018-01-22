@@ -22,13 +22,13 @@ export class AppComponent {
   timer;
 
   constructor() {
-    // this.timer = setInterval(() => {
-    //   this.progress++;
-    //   console.log('zrq');
-    //   if (this.progress === 100) {
-    //     clearInterval(this.timer);
-    //   }
-    // }, 20);
+    this.timer = setInterval(() => {
+      this.progress++;
+      console.log('zrq');
+      if (this.progress === 100) {
+        clearInterval(this.timer);
+      }
+    }, 20);
   }
 
   onChange(event) {
