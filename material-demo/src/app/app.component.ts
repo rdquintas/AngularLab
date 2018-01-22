@@ -22,23 +22,22 @@ export class AppComponent {
   timer;
 
   constructor() {
-    this.timer = setInterval(() => {
-      this.progress++;
-      console.log('zrq');
-      if (this.progress === 100) {
-        clearInterval(this.timer);
-      }
-    }, 20);
+    // this.timer = setInterval(() => {
+    //   this.progress++;
+    //   console.log('zrq');
+    //   if (this.progress === 100) {
+    //     clearInterval(this.timer);
+    //   }
+    // }, 20);
   }
 
   onChange(event) {
     console.log(event);
   }
 
-  onSelectChip(cat) {
-    this.categories.filter(c => c !== cat).forEach(c => c['selected'] = false);
-
-    cat.selected = !cat.selected;
-  }
+  // onSelectChip(cat) {
+  //   this.categories.filter(c => c !== cat).forEach(c => c['selected'] = false);
+  //   cat.selected = !cat.selected;
+  // }
 
 }
