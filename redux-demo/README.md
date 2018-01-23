@@ -2,6 +2,6 @@
 
 # REDUX demo app
 
-- Uses [ng-redux](https://github.com/angular-redux/ng-redux).
+- Uses [angular-redux/store](https://github.com/angular-redux/store).
 - 
 
