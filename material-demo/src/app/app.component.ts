@@ -26,7 +26,7 @@ export class AppComponent {
   constructor(private dialog: MatDialog) {
     this.timer = setInterval(() => {
       this.progress++;
-      console.log('zrq');
+      // console.log('zrq');
       if (this.progress === 100) {
         clearInterval(this.timer);
       }
@@ -43,7 +43,7 @@ export class AppComponent {
   }
 
   openDialog(event) {
-    this.dialog.open(EditCourseComponent);
+    this.dialog.open(EditCourseComponent).afterClosed().subscribe(result => console.log(result));
   }
 
 

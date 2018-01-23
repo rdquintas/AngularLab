@@ -18,6 +18,9 @@ import { EditCourseComponent } from './edit-course/edit-course.component';
     AppComponent,
     EditCourseComponent
   ],
+  entryComponents: [
+    EditCourseComponent  // this is where we need to insert the ref to the popup
+  ],
   imports: [
     FormsModule,
     BrowserModule,
