@@ -69,4 +69,4 @@ Project | Information
 ## REDUX
 Project | Information
 --- | ---
-[redux-demo](https://github.com/rdquintas/AngularLab/tree/master/redux-demo) | angular-redux/store
+[redux-demo](https://github.com/rdquintas/AngularLab/tree/master/redux-demo) | uses library angular-redux/store
