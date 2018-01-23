@@ -4,14 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-
-import {
-  MatCheckboxModule
-  , MatRadioModule, MatSelectModule, MatInputModule, MatDatepickerModule,
-  MatNativeDateModule, MatIconModule, MatButtonModule, MatChipsModule, MatProgressSpinnerModule,
-  MatTooltipModule, MatTabsModule, MatDialogModule
-} from '@angular/material';
 import { EditCourseComponent } from './edit-course/edit-course.component';
+import { MatComponentsModule } from './mat-components.module';
 
 @NgModule({
   declarations: [
@@ -25,19 +19,7 @@ import { EditCourseComponent } from './edit-course/edit-course.component';
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatCheckboxModule,
-    MatRadioModule,
-    MatSelectModule,
-    MatInputModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatIconModule,
-    MatButtonModule,
-    MatChipsModule,
-    MatProgressSpinnerModule,
-    MatTooltipModule,
-    MatTabsModule,
-    MatDialogModule
+    MatComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
