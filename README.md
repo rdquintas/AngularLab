@@ -65,3 +65,8 @@ Project | Information
 Project | Information
 --- | ---
 [material-demo](https://github.com/rdquintas/AngularLab/tree/master/material-demo) | uses Angular Material; implements Material Typography; example with different UI objects; Dialog popup example with data
+
+## REDUX
+Project | Information
+--- | ---
+[redux-demo](https://github.com/rdquintas/AngularLab/tree/master/redux-demo) | angular-redux/store
