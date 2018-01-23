@@ -9,12 +9,14 @@ import {
   MatCheckboxModule
   , MatRadioModule, MatSelectModule, MatInputModule, MatDatepickerModule,
   MatNativeDateModule, MatIconModule, MatButtonModule, MatChipsModule, MatProgressSpinnerModule,
-  MatTooltipModule, MatTabsModule
+  MatTooltipModule, MatTabsModule, MatDialogModule
 } from '@angular/material';
+import { EditCourseComponent } from './edit-course/edit-course.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EditCourseComponent
   ],
   imports: [
     FormsModule,
@@ -31,7 +33,8 @@ import {
     MatChipsModule,
     MatProgressSpinnerModule,
     MatTooltipModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
