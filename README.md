@@ -70,3 +70,4 @@ Project | Information
 Project | Information
 --- | ---
 [redux-demo](https://github.com/rdquintas/AngularLab/tree/master/redux-demo) | uses library `angular-redux/store`
+[redux-todo-app](https://github.com/rdquintas/AngularLab/tree/master/redux-todo-app) | uses library `angular-redux/store`
