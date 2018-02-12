@@ -4,9 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { IAppState, rootReducer, INITIAL_STATE } from './store';
+import { NgRedux, NgReduxModule } from '@angular-redux/store';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoDashboardComponent } from './todo-dashboard/todo-dashboard.component';
-import { TodoService } from './todo.service';
+// import { TodoService } from './todo.service';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,14 @@ import { TodoService } from './todo.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    NgReduxModule
   ],
-  providers: [TodoService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
+  constructor(ngRedux: NgRedux<IAppState>) {
+    ngRedux.configureStore(rootReducer, INITIAL_STATE);
+  }
 }
