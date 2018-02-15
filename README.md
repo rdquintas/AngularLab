@@ -71,3 +71,8 @@ Project | Information
 --- | ---
 [redux-demo](https://github.com/rdquintas/AngularLab/tree/master/redux-demo) | uses library `angular-redux/store`
 [redux-todo-app](https://github.com/rdquintas/AngularLab/tree/master/redux-todo-app) | uses library `angular-redux/store`
+
+## TESTING
+Project | Information
+--- | ---
+[testing-demo](https://github.com/rdquintas/AngularLab/tree/master/testing-demo) | Unit Testing example; Uses Karma; Uses Jasmine
